@@ -2,8 +2,14 @@
   --bg: #ffffff;
   --text: #111111;
   --text-soft: #2b2b2b;
-  --accent: #a3d0bf;
   --border: #e7e7e7;
+  --card-bg: rgba(255, 255, 255, 0.9);
+  --shadow: 0 16px 40px rgba(0, 0, 0, 0.07);
+  --link-color: #111111;
+  --link-hover-bg: #111111;
+  --link-hover-text: #ffffff;
+  --logo-filter: none;
+  color-scheme: light;
 }
 
 * {
@@ -15,7 +21,7 @@ body {
   min-height: 100vh;
   font-family: "Manrope", sans-serif;
   color: var(--text);
-  background: #ffffff;
+  background: var(--bg);
 }
 
 .landing {
@@ -31,17 +37,18 @@ body {
   padding: 2rem 1.4rem 1.5rem;
   border: 1px solid var(--border);
   border-radius: 24px;
-  background: rgba(255, 255, 255, 0.9);
+  background: var(--card-bg);
   backdrop-filter: blur(6px);
   text-align: center;
   position: relative;
   z-index: 1;
-  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.07);
+  box-shadow: var(--shadow);
 }
 
 .logo {
   width: min(230px, 70%);
   height: auto;
+  filter: var(--logo-filter);
 }
 
 .kicker {
@@ -70,9 +77,9 @@ body {
   align-items: center;
   justify-content: center;
   gap: 0.55rem;
-  border: 1px solid #111111;
+  border: 1px solid var(--link-color);
   border-radius: 999px;
-  color: #111111;
+  color: var(--link-color);
   text-decoration: none;
   font-weight: 700;
   padding: 0.86rem 1rem;
@@ -88,8 +95,24 @@ body {
 .link:hover,
 .link:focus-visible {
   transform: translateY(-1px);
-  background: #111111;
-  color: #ffffff;
+  background: var(--link-hover-bg);
+  color: var(--link-hover-text);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #101312;
+    --text: #eef2f0;
+    --text-soft: #c4ceca;
+    --border: #2a3430;
+    --card-bg: rgba(16, 19, 18, 0.9);
+    --shadow: 0 22px 44px rgba(0, 0, 0, 0.42);
+    --link-color: #eef2f0;
+    --link-hover-bg: #a3d0bf;
+    --link-hover-text: #0d1511;
+    --logo-filter: invert(1);
+    color-scheme: dark;
+  }
 }
 
 @media (max-width: 480px) {
