@@ -1,0 +1,104 @@
+﻿:root {
+  --bg: #ffffff;
+  --text: #111111;
+  --text-soft: #2b2b2b;
+  --accent: #a3d0bf;
+  --border: #e7e7e7;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: "Manrope", sans-serif;
+  color: var(--text);
+  background: #ffffff;
+}
+
+.landing {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 2rem 1rem;
+  position: relative;
+}
+
+.card {
+  width: min(430px, 100%);
+  padding: 2rem 1.4rem 1.5rem;
+  border: 1px solid var(--border);
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(6px);
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.07);
+}
+
+.logo {
+  width: min(230px, 70%);
+  height: auto;
+}
+
+.kicker {
+  margin: 0.7rem 0 0;
+  font-size: 0.73rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--text-soft);
+}
+
+.subtitle {
+  margin: 0.8rem auto 1.5rem;
+  max-width: 30ch;
+  color: var(--text-soft);
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.links {
+  display: grid;
+  gap: 0.65rem;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.55rem;
+  border: 1px solid #111111;
+  border-radius: 999px;
+  color: #111111;
+  text-decoration: none;
+  font-weight: 700;
+  padding: 0.86rem 1rem;
+  transition: transform 150ms ease, background-color 150ms ease, color 150ms ease;
+}
+
+.emoji {
+  font-size: 1rem;
+  line-height: 1;
+  flex: 0 0 auto;
+}
+
+.link:hover,
+.link:focus-visible {
+  transform: translateY(-1px);
+  background: #111111;
+  color: #ffffff;
+}
+
+@media (max-width: 480px) {
+  .card {
+    padding: 1.75rem 1rem 1.2rem;
+    border-radius: 20px;
+  }
+
+  .subtitle {
+    font-size: 0.92rem;
+  }
+}
