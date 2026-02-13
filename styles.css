@@ -79,15 +79,10 @@ body {
   transition: transform 150ms ease, background-color 150ms ease, color 150ms ease;
 }
 
-.icon {
-  width: 1rem;
-  height: 1rem;
+.emoji {
+  font-size: 1rem;
+  line-height: 1;
   flex: 0 0 auto;
-  stroke: currentColor;
-  fill: none;
-  stroke-width: 1.9;
-  stroke-linecap: round;
-  stroke-linejoin: round;
 }
 
 .link:hover,
