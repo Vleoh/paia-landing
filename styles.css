@@ -1,12 +1,12 @@
 ﻿:root {
-  --bg: radial-gradient(130% 110% at 12% 0%, #ffd9ea 0%, #ffc5df 42%, #f8a8cd 72%, #ee95be 100%);
-  --text: #351527;
-  --text-soft: #6c3651;
+  --bg: radial-gradient(130% 110% at 12% 0%, #ffe3e3 0%, #ffc2c2 40%, #ff9d9d 70%, #ef6767 100%);
+  --text: #3a0f0f;
+  --text-soft: #6f2b2b;
   --border: rgba(255, 255, 255, 0.7);
   --card-bg: rgba(255, 255, 255, 0.78);
-  --shadow: 0 20px 48px rgba(137, 33, 89, 0.2);
-  --link-color: #3d1028;
-  --link-hover-bg: #e33f8f;
+  --shadow: 0 20px 48px rgba(125, 28, 28, 0.2);
+  --link-color: #3a0f0f;
+  --link-hover-bg: #c62828;
   --link-hover-text: #ffffff;
   --logo-filter: none;
   color-scheme: light;
@@ -113,9 +113,9 @@ body {
 }
 
 .link-valentine {
-  border-color: rgba(227, 63, 143, 0.88);
+  border-color: #c62828;
   color: #ffffff;
-  background: #e33f8f;
+  background: #111111;
 }
 
 .emoji {
@@ -133,27 +133,27 @@ body {
 
 .link.link-valentine:hover,
 .link.link-valentine:focus-visible {
-  background: rgba(255, 255, 255, 0.62);
-  color: #7c1b4f;
+  background: #c62828;
+  color: #ffffff;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg: radial-gradient(130% 115% at 12% 0%, #6f1e46 0%, #541534 45%, #340b1f 76%, #210613 100%);
-    --text: #ffe7f3;
-    --text-soft: #efc5d8;
+    --bg: radial-gradient(130% 115% at 12% 0%, #5a1212 0%, #461010 45%, #2f0909 76%, #1f0505 100%);
+    --text: #ffeaea;
+    --text-soft: #efc9c9;
     --border: rgba(255, 255, 255, 0.2);
-    --card-bg: rgba(28, 8, 19, 0.72);
+    --card-bg: rgba(22, 8, 8, 0.76);
     --shadow: 0 24px 48px rgba(0, 0, 0, 0.45);
-    --link-color: #ffe7f3;
-    --link-hover-bg: #ff5ba6;
-    --link-hover-text: #2d0818;
+    --link-color: #ffeaea;
+    --link-hover-bg: #d32f2f;
+    --link-hover-text: #ffffff;
     --logo-filter: invert(1);
     color-scheme: dark;
   }
 
   .heart {
-    color: rgba(255, 182, 214, var(--alpha));
+    color: rgba(255, 176, 176, var(--alpha));
   }
 
   .link {
@@ -161,15 +161,15 @@ body {
   }
 
   .link-valentine {
-    border-color: rgba(255, 91, 166, 0.78);
+    border-color: #ff6b6b;
     color: #ffffff;
-    background: #ff5ba6;
+    background: #0f0f0f;
   }
 
   .link.link-valentine:hover,
   .link.link-valentine:focus-visible {
-    background: rgba(255, 91, 166, 0.12);
-    color: #ffe7f3;
+    background: #d32f2f;
+    color: #ffffff;
   }
 }
 
