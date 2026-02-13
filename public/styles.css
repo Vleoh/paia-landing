@@ -113,9 +113,9 @@ body {
 }
 
 .link-valentine {
-  border-color: rgba(227, 63, 143, 0.55);
-  color: #7c1b4f;
-  background: rgba(255, 255, 255, 0.62);
+  border-color: rgba(227, 63, 143, 0.88);
+  color: #ffffff;
+  background: #e33f8f;
 }
 
 .emoji {
@@ -129,6 +129,12 @@ body {
   transform: translateY(-1px);
   background: var(--link-hover-bg);
   color: var(--link-hover-text);
+}
+
+.link.link-valentine:hover,
+.link.link-valentine:focus-visible {
+  background: rgba(255, 255, 255, 0.62);
+  color: #7c1b4f;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -155,7 +161,15 @@ body {
   }
 
   .link-valentine {
+    border-color: rgba(255, 91, 166, 0.78);
+    color: #ffffff;
+    background: #ff5ba6;
+  }
+
+  .link.link-valentine:hover,
+  .link.link-valentine:focus-visible {
     background: rgba(255, 91, 166, 0.12);
+    color: #ffe7f3;
   }
 }
 
